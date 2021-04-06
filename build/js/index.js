@@ -42,3 +42,7 @@ class MobileSidebarUtil {
         }
     }
 }
+//Web components
+class XcelsiorRootHTMLElement extends HTMLElement {
+}
+customElements.define("xcelsior-root", XcelsiorRootHTMLElement);

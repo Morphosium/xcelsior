@@ -19,3 +19,5 @@ declare class MobileSidebarUtil {
      */
     static toggleSidebarSection(element: ElementDefinition, sectionName?: string): void;
 }
+declare class XcelsiorRootHTMLElement extends HTMLElement {
+}
