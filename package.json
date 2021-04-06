@@ -1,0 +1,17 @@
+{
+  "name": "@morphosium/xcelsior",
+  "version": "1.0.0",
+  "description": "CSS library helps interface like native application",
+  "main": "sassfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Morphosium Yazılım ve Donanım hizmetleri ticareti ltd. şti",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^4.2.3"
+  }
+}
