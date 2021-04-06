@@ -31,7 +31,7 @@ class MobileSidebarUtil {
      */
     static toggleSidebarSection(element: ElementDefinition, sectionName?: string) {
         const nativeElement = Util.nativeHTMLElement(element);
-        const sidebarList = nativeElement.querySelectorAll(`.${MOBILE_SAFE_VIEW} .wrap .inner > .${SIDEBAR_CLASS}`);
+        const sidebarList = nativeElement.querySelectorAll(`.${MOBILE_SAFE_VIEW} .inner > .${SIDEBAR_CLASS}`);
         for (let sidebarIndex = 0; sidebarIndex < sidebarList.length; sidebarIndex++) {
             const sidebar = sidebarList[sidebarIndex];
             sidebar.classList.remove(SHOW_ON_MOBILE_CLASS);
