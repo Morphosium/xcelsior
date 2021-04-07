@@ -47,3 +47,5 @@ class MobileSidebarUtil {
         }
     }
 }
+
+export default {Util, MobileSidebarUtil}

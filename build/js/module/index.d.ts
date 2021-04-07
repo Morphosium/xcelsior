@@ -1,8 +1,4 @@
 declare type ElementDefinition = HTMLElement | string;
-declare const SHOW_ON_MOBILE_CLASS = "show-on-mobile";
-declare const SECTION_NAME_ATTR = "section-name";
-declare const SIDEBAR_CLASS = "sidebar";
-declare const MOBILE_SAFE_VIEW = "mobile-view-safe";
 declare class Util {
     /**
      * returns element fallback
@@ -19,5 +15,8 @@ declare class MobileSidebarUtil {
      */
     static toggleSidebarSection(element: ElementDefinition, sectionName?: string): void;
 }
-declare class XcelsiorRootHTMLElement extends HTMLElement {
-}
+declare const _default: {
+    Util: typeof Util;
+    MobileSidebarUtil: typeof MobileSidebarUtil;
+};
+export default _default;

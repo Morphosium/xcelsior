@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const SHOW_ON_MOBILE_CLASS = "show-on-mobile";
 const SECTION_NAME_ATTR = "section-name";
 const SIDEBAR_CLASS = "sidebar";
@@ -42,7 +44,4 @@ class MobileSidebarUtil {
         }
     }
 }
-//Web components
-class XcelsiorRootHTMLElement extends HTMLElement {
-}
-customElements.define("xcelsior-root", XcelsiorRootHTMLElement);
+exports.default = { Util, MobileSidebarUtil };
