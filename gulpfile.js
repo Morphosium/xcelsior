@@ -33,8 +33,8 @@ let buildTsBundle = () => {
     .plugin(tsify, { target: 'es6' })
     .transform(babelify, { extensions: ['.tsx', '.ts'] })
     .bundle()
-    .pipe(source("bundle.js"))
-    .pipe(gulp.dest("build/bundle"));
+    .pipe(source("xcelsior.js"))
+    .pipe(gulp.dest("build/js/bundle"));
 }
 
 let buildTs = () => {
@@ -48,7 +48,7 @@ let buildTs = () => {
     allowJs: true,
     esModuleInterop: false
   }))
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('build/js/module'));
 }
 
 
