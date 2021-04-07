@@ -2,7 +2,7 @@
   "name": "@morphosium/xcelsior",
   "version": "1.0.0",
   "description": "CSS library helps interface like native application",
-  "main": "sassfile.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +19,18 @@
     "tsify": "^5.0.2",
     "typescript": "^4.2.3",
     "vinyl-source-stream": "^2.0.0"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Morphosium/xcelsior.git"
+  },
+  "keywords": [
+    "frontend",
+    "ui"
+  ],
+  "bugs": {
+    "url": "https://github.com/Morphosium/xcelsior/issues"
+  },
+  "homepage": "https://github.com/Morphosium/xcelsior#readme"
 }
