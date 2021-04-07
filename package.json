@@ -8,10 +8,16 @@
   },
   "author": "Morphosium Yazılım ve Donanım hizmetleri ticareti ltd. şti",
   "license": "Apache-2.0",
-  "dependencies": {
-    "gulp": "^4.0.2",
+  "devDependencies": {
+    "babelify": "^10.0.0",
+    "@babel/core": "^7.13.14",
+    "@lernetz/gulp-typescript-bundle": "^0.3.1",
+    "browserify": "^17.0.0",
+    "gulp": "^4.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-typescript": "^6.0.0-alpha.1",
-    "typescript": "^4.2.3"
+    "tsify": "^5.0.2",
+    "typescript": "^4.2.3",
+    "vinyl-source-stream": "^2.0.0"
   }
 }
