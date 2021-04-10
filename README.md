@@ -20,29 +20,30 @@ Xcelsior helps creating user interfaces containers and
 
 - All element definitions must be at 
 
-        <div class="xcelsior-root">
+        <xcelsior-root>
 
-        </div>
+        </xcelsior-root>
 
-- Grid views
+- Grids
 
-         <div class="main-sidebar grid-view mobile-view-safe">
-            <div class="wrap">
-                <div class="inner">
-                    <div class="sidebar" style="width: 300px;" section-name="right">
-                        <h1>Right</h1>
-                    </div>
-
-                    <div class="content">
-                        <h1> content </h1>
-                    </div>
-
-                    <div class="sidebar" style="width: 300px;" section-name="left">
-                        <h1>Left</h1>
-                    </div>
-                </div>
+    ```
+    <xcelsior-root>
+         <xcelsior-grid-view class="main-sidebar mobile-view-safe">
+            <div class="sidebar" style="width: 300px;" section-name="right">
+                <h1>Right</h1>
             </div>
-        </div>
+            <div class="content">
+                <h1>content</h1>  
+            </div>
+            <div class="sidebar" style="width: 300px;" section-name="left">
+                <h1>Left</h1>
+            </div>
+        </xcelsior-grid-view>
+    </xcelsior-root>
+    ```
+
+- Mobile safe grid view, scrollable elements and utils
+    - Take a look at [advanced example](./examples/mobil-safe-view-advanced.html)
 
 **Detailed information will be documented. But you can check the [test/ui.html](test/ui.html) file for detailed usage**
 

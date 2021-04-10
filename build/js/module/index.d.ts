@@ -13,10 +13,19 @@ declare class MobileSidebarUtil {
      * @param element
      * @param sectionName
      */
-    static toggleSidebarSection(element: ElementDefinition, sectionName?: string): void;
+    static toggleSidebarSection(element: ElementDefinition, sectionName?: string, scrollUp?: boolean): void;
 }
 declare const _default: {
     Util: typeof Util;
     MobileSidebarUtil: typeof MobileSidebarUtil;
 };
 export default _default;
+export declare class XcelsiorHTMLElement extends HTMLElement {
+    constructor();
+}
+export declare class RootXcelsiorHTMLElement extends HTMLElement {
+}
+export declare class ScrollableXcelsiorHTMLElement extends XcelsiorHTMLElement {
+}
+export declare class GridViewXcelsiorHTMLElement extends XcelsiorHTMLElement {
+}

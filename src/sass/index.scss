@@ -13,7 +13,7 @@ body {
     }
 }
 
-.xcelsior-root {
+xcelsior-root {
     @extend .text-ui;
     & > * {
         position: absolute;
@@ -46,13 +46,13 @@ body {
         }
     }
 
-    .scrollable {
+    xcelsior-scrollable {
         @extend .outer;
         .inner {
             overflow: auto;
         }
     }
-    .grid-view {
+    xcelsior-grid-view {
         @extend .outer, .cover;
 
         .wrap .inner {

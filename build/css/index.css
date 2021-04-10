@@ -2,55 +2,55 @@ body {
   padding: 0px;
   margin: 0px; }
 
-.text-ui, .xcelsior-root {
+.text-ui, xcelsior-root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
 
 .text-monospace {
   font-family: monospace; }
 
-.xcelsior-root {
+xcelsior-root {
   height: 100vh;
   width: 100vw;
   user-select: none; }
-  .xcelsior-root > * {
+  xcelsior-root > * {
     position: absolute; }
-  .xcelsior-root .selectable {
+  xcelsior-root .selectable {
     user-select: text; }
-    .xcelsior-root .selectable-all {
+    xcelsior-root .selectable-all {
       user-select: all; }
-  .xcelsior-root .cover, .xcelsior-root .outer .wrap, .xcelsior-root .scrollable .wrap, .xcelsior-root .grid-view .wrap, .xcelsior-root .outer .wrap .inner, .xcelsior-root .scrollable .wrap .inner, .xcelsior-root .grid-view .wrap .inner, .xcelsior-root .grid-view {
+  xcelsior-root .cover, xcelsior-root .outer .wrap, xcelsior-root xcelsior-scrollable .wrap, xcelsior-root xcelsior-grid-view .wrap, xcelsior-root .outer .wrap .inner, xcelsior-root xcelsior-scrollable .wrap .inner, xcelsior-root xcelsior-grid-view .wrap .inner, xcelsior-root xcelsior-grid-view {
     height: 100%;
     width: 100%; }
-  .xcelsior-root .outer .wrap, .xcelsior-root .scrollable .wrap, .xcelsior-root .grid-view .wrap {
+  xcelsior-root .outer .wrap, xcelsior-root xcelsior-scrollable .wrap, xcelsior-root xcelsior-grid-view .wrap {
     position: relative; }
-    .xcelsior-root .outer .wrap .inner, .xcelsior-root .scrollable .wrap .inner, .xcelsior-root .grid-view .wrap .inner {
+    xcelsior-root .outer .wrap .inner, xcelsior-root xcelsior-scrollable .wrap .inner, xcelsior-root xcelsior-grid-view .wrap .inner {
       position: absolute; }
-  .xcelsior-root .scrollable .inner {
+  xcelsior-root xcelsior-scrollable .inner {
     overflow: auto; }
-  .xcelsior-root .grid-view .wrap .inner {
+  xcelsior-root xcelsior-grid-view .wrap .inner {
     display: flex;
     flex-direction: row; }
-  .xcelsior-root .grid-view .content {
+  xcelsior-root xcelsior-grid-view .content {
     flex-grow: 1; }
-  .xcelsior-root .grid-view .sidebar {
+  xcelsior-root xcelsior-grid-view .sidebar {
     height: 100%;
     overflow: auto; }
-  .xcelsior-root .grid-view.vertical .wrap .inner {
+  xcelsior-root xcelsior-grid-view.vertical .wrap .inner {
     flex-direction: column; }
-  .xcelsior-root .grid-view.vertical .sidebar {
+  xcelsior-root xcelsior-grid-view.vertical .sidebar {
     height: auto; }
   @media screen and (max-width: 992px) {
-    .xcelsior-root .grid-view.mobile-view-safe > .wrap > .inner {
+    xcelsior-root xcelsior-grid-view.mobile-view-safe > .wrap > .inner {
       display: block; }
-      .xcelsior-root .grid-view.mobile-view-safe > .wrap > .inner > .sidebar {
+      xcelsior-root xcelsior-grid-view.mobile-view-safe > .wrap > .inner > .sidebar {
         display: none;
         position: absolute;
         width: 100% !important; }
-        .xcelsior-root .grid-view.mobile-view-safe > .wrap > .inner > .sidebar.show-on-mobile {
+        xcelsior-root xcelsior-grid-view.mobile-view-safe > .wrap > .inner > .sidebar.show-on-mobile {
           display: block; }
-      .xcelsior-root .grid-view.mobile-view-safe > .wrap > .inner > .content {
+      xcelsior-root xcelsior-grid-view.mobile-view-safe > .wrap > .inner > .content {
         height: 100%;
         width: 100%;
         position: absolute; }
-        .xcelsior-root .grid-view.mobile-view-safe > .wrap > .inner > .content.hide {
+        xcelsior-root xcelsior-grid-view.mobile-view-safe > .wrap > .inner > .content.hide {
           display: none; } }
