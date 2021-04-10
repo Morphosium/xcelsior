@@ -1,10 +1,10 @@
-# xcelsior
+# xcelsior (alpha)
 
 Xcelsior helps creating user interfaces containers and 
 
 ## Demonstration
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/03kfVM46Eec/0.jpg)](https://www.youtube.com/watch?v=03kfVM46Eec)
+[![Demonstration](https://img.youtube.com/vi/03kfVM46Eec/0.jpg)](https://www.youtube.com/watch?v=03kfVM46Eec)
 ## How to use?
 
 - Import CSS and JS files (if you want make sidebars mobile safe)
@@ -45,7 +45,8 @@ Xcelsior helps creating user interfaces containers and
 - Mobile safe grid view, scrollable elements and utils
     - Take a look at [advanced example](./examples/mobil-safe-view-advanced.html)
 
-**Detailed information will be documented. But you can check the [test/ui.html](test/ui.html) file for detailed usage**
+
+If you encounter a issue, please don't be shy to contact or open issue ticket 
 
 ## Contact
 
