@@ -1,6 +1,6 @@
 # xcelsior (alpha)
 
-Xcelsior helps creating user interfaces containers and 
+Xcelsior helps creating user interfaces containers and it makes developing views with sidebar easier.
 
 ## Demonstration
 

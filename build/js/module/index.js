@@ -26,7 +26,7 @@ class MobileSidebarUtil {
      * @param element
      * @param sectionName
      */
-    static toggleSidebarSection(element, sectionName, scrollUp = true) {
+    static toggleSidebarSection(element, sectionName, scrollUpSidebar = true) {
         var _a;
         const nativeElement = Util.nativeHTMLElement(element);
         const sidebarList = nativeElement.querySelectorAll(`.${MOBILE_SAFE_VIEW} > .wrap > .inner > .${SIDEBAR_CLASS}`);
@@ -35,7 +35,7 @@ class MobileSidebarUtil {
             sidebar.classList.remove(SHOW_ON_MOBILE_CLASS);
             if (sidebar.getAttribute(SECTION_NAME_ATTR) === sectionName) {
                 sidebar.classList.add(SHOW_ON_MOBILE_CLASS);
-                if (scrollUp)
+                if (scrollUpSidebar)
                     sidebar.scrollTop = 0;
             }
         }
@@ -70,7 +70,9 @@ const initXcelsiorElement = (element) => {
 class XcelsiorHTMLElement extends HTMLElement {
     constructor() {
         super();
-        initXcelsiorElement(this);
+        window.addEventListener("load", () => {
+            initXcelsiorElement(this);
+        });
     }
 }
 exports.XcelsiorHTMLElement = XcelsiorHTMLElement;

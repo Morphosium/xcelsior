@@ -74,7 +74,9 @@ const initXcelsiorElement = (element: HTMLElement) => {
 export class XcelsiorHTMLElement extends HTMLElement {
     constructor() {
         super();
-        initXcelsiorElement(this);
+        window.addEventListener("load", () => {
+            initXcelsiorElement(this);
+        })
     }
 }
 

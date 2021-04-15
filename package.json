@@ -1,6 +1,6 @@
 {
   "name": "@morphosium/xcelsior",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CSS library helps interface like native application",
   "main": "gulpfile.js",
   "scripts": {

@@ -13,7 +13,7 @@ declare class MobileSidebarUtil {
      * @param element
      * @param sectionName
      */
-    static toggleSidebarSection(element: ElementDefinition, sectionName?: string, scrollUp?: boolean): void;
+    static toggleSidebarSection(element: ElementDefinition, sectionName?: string, scrollUpSidebar?: boolean): void;
 }
 declare const _default: {
     Util: typeof Util;
