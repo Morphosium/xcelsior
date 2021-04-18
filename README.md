@@ -30,6 +30,10 @@ Xcelsior helps creating user interfaces containers and it makes developing views
 
             import { MobileSidebarUtil } from "@morphosium/xcelsior";
 
+    - And import styles by (if you using webpack or something)
+
+            @import "~@morphosium/xcelsior/index.css";
+
 - All element definitions must be at 
 
         <xcelsior-root>
