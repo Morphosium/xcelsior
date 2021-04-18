@@ -6,7 +6,7 @@ declare class Util {
      */
     static nativeHTMLElement(el: ElementDefinition): HTMLElement;
 }
-declare class MobileSidebarUtil {
+export declare class MobileSidebarUtil {
     /**
      * When on small screens, if mobile view management is enabled on sidebar,
      * sidebar sections will be shown or hidden. If sectionName is not

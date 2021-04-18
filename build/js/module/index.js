@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.GridViewXcelsiorHTMLElement = exports.ScrollableXcelsiorHTMLElement = exports.RootXcelsiorHTMLElement = exports.XcelsiorHTMLElement = void 0;
+exports.GridViewXcelsiorHTMLElement = exports.ScrollableXcelsiorHTMLElement = exports.RootXcelsiorHTMLElement = exports.XcelsiorHTMLElement = exports.MobileSidebarUtil = void 0;
 const SHOW_ON_MOBILE_CLASS = "show-on-mobile";
 const SECTION_NAME_ATTR = "section-name";
 const SIDEBAR_CLASS = "sidebar";
@@ -47,6 +47,7 @@ class MobileSidebarUtil {
         }
     }
 }
+exports.MobileSidebarUtil = MobileSidebarUtil;
 exports.default = { Util, MobileSidebarUtil };
 const initXcelsiorElement = (element) => {
     var _a, _b;
