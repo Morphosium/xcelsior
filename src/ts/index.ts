@@ -20,7 +20,7 @@ class Util {
     }
 }
 
-class MobileSidebarUtil {
+export class MobileSidebarUtil {
 
 
     /**
