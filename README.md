@@ -7,6 +7,14 @@ Xcelsior helps creating user interfaces containers and it makes developing views
 [![Demonstration](https://img.youtube.com/vi/03kfVM46Eec/0.jpg)](https://www.youtube.com/watch?v=03kfVM46Eec)
 ## How to use?
 
+- Install xcelsior by downloading files or using package manager:
+        
+        npm i @morphosium/xcelsior
+    
+    or
+
+        yarn add @morphosium/xcelsior
+
 - Import CSS and JS files (if you want make sidebars mobile safe)
         
         <head>
@@ -17,6 +25,10 @@ Xcelsior helps creating user interfaces containers and it makes developing views
             <script src="../build/js/bundle/xcelsior.js"></script>
             <!-- another scripts -->
         </body>
+
+    - If you consider use at a module, import necessary modules by:
+
+            import { MobileSidebarUtil } from "@morphosium/xcelsior";
 
 - All element definitions must be at 
 
