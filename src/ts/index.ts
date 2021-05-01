@@ -83,7 +83,12 @@ export class XcelsiorHTMLElement extends HTMLElement {
 export class RootXcelsiorHTMLElement extends HTMLElement { }
 export class ScrollableXcelsiorHTMLElement extends XcelsiorHTMLElement { }
 export class GridViewXcelsiorHTMLElement extends XcelsiorHTMLElement { }
-
-customElements.define("xcelsior-root", RootXcelsiorHTMLElement);
-customElements.define("xcelsior-scrollable", ScrollableXcelsiorHTMLElement)
-customElements.define("xcelsior-grid-view", GridViewXcelsiorHTMLElement)
+if (typeof customElements.get("xcelsior-root") === "undefined") {
+    customElements.define("xcelsior-root", RootXcelsiorHTMLElement);
+}
+if (typeof customElements.get("xcelsior-scrollable") === "undefined") {
+    customElements.define("xcelsior-scrollable", ScrollableXcelsiorHTMLElement);
+}
+if (typeof customElements.get("xcelsior-grid-view") === "undefined") {
+    customElements.define("xcelsior-grid-view", GridViewXcelsiorHTMLElement);
+}
