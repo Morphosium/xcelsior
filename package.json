@@ -1,13 +1,13 @@
 {
   "name": "@morphosium/xcelsior",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "CSS library helps interface like native application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Morphosium Yazılım ve Donanım hizmetleri ticareti ltd. şti",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "devDependencies": {
     "babelify": "^10.0.0",
     "@babel/core": "^7.13.14",
