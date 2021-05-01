@@ -21,6 +21,7 @@ declare const _default: {
 };
 export default _default;
 export declare class XcelsiorHTMLElement extends HTMLElement {
+    draggingInnerElement: HTMLElement;
     constructor();
 }
 export declare class RootXcelsiorHTMLElement extends HTMLElement {

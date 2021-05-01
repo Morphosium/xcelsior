@@ -72,10 +72,32 @@ const initXcelsiorElement = (element: HTMLElement) => {
 }
 
 export class XcelsiorHTMLElement extends HTMLElement {
+    draggingInnerElement: HTMLElement;
+
     constructor() {
         super();
         window.addEventListener("load", () => {
             initXcelsiorElement(this);
+            const inner = this.children[0].children[0];
+            for (let childIndex = 0; childIndex < inner.children.length; childIndex++) {
+                const innerChild = inner.children[childIndex] as HTMLElement & { realParent: XcelsiorHTMLElement };
+                innerChild.realParent = this;
+                innerChild.draggable = true;
+                innerChild.addEventListener("dragstart", (ev) => {
+                    this.draggingInnerElement = innerChild;
+                });
+                innerChild.addEventListener("dragover", (e) => {
+                    e.returnValue = false;
+                });
+                innerChild.addEventListener("drop", (e) => {
+                    if (innerChild.realParent === this) {
+                        // const index = Array.prototype.indexOf.call(innerChild.parentElement.children, this.draggingInnerElement);
+                        innerChild.insertAdjacentElement("beforebegin", this.draggingInnerElement);
+                    }
+
+                });
+
+            }
         })
     }
 }
